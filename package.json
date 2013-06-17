@@ -1,6 +1,6 @@
 {
   "name": "castaway",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "cast JS objects to a specified schema, ahoy!",
   "main": "castaway.js",
   "scripts": {
