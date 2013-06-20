@@ -1,5 +1,7 @@
 
 var castaway = module.exports = function(params, schema) {
+	if(!params) return params;
+
 	Object.keys(schema).forEach(function(key) {
 		if(params[key] === undefined) return;
 
