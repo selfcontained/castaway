@@ -1,4 +1,4 @@
-[![browser support](http://ci.testling.com/selfcontained/castaway.png)](http://ci.testling.com/selfcontained/castaway)
+[![browser support](https://ci.testling.com/selfcontained/castaway.png)](http://ci.testling.com/selfcontained/castaway)
 
 [![Build Status](https://secure.travis-ci.org/selfcontained/castaway.png?branch=master)](http://travis-ci.org/selfcontained/castaway)
 
