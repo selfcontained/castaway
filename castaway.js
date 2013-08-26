@@ -1,3 +1,4 @@
+var moment = require('moment');
 
 var castaway = module.exports = function(params, schema) {
 	if(!params) return params;
@@ -39,9 +40,8 @@ function adjustType(value, type) {
 			value = value in TRUE ? true : value in FALSE ? false : null;
 			break;
 		case Date:
-			//TODO: handle invalid dates - set to null
-			value = Date.parse(value);
-			value = !!value ? new Date(value) : null;
+			value = moment(value);
+			value = value.isValid() ? value.toDate() : null;
 			break;
 		case Array:
 			// attempt to convert csv params into an array

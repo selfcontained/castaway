@@ -28,7 +28,7 @@ Supported `type` values are:
 
 +	Number
 +	Boolean
-+	Date
++	Date (parses value with [moment](http://github.com/moment/moment/))
 +	Array (converts a CSV string into an Array)
 
 Arrays also support defining member schemas via an `each` property, and specifying the schema or types:

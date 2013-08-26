@@ -45,6 +45,7 @@ describe('casting types', function(){
 
 			cast(obj, schema);
 			assert.equal(obj.foo.constructor, Date);
+			assert.equal(obj.foo.getTime(), new Date('Thu Feb 28 2013 16:31:13').getTime());
 		});
 
 		it('should turn a properly formatted date string into a Date', function() {
@@ -52,7 +53,7 @@ describe('casting types', function(){
 
 			cast(obj, schema);
 			assert.equal(obj.foo.constructor, Date);
-			assert.equal(obj.foo.getTime(), new Date('2013-02-28').getTime());
+			assert.equal(obj.foo.getTime(), new Date('Thu Feb 28 2013').getTime());
 		});
 
 		it('should turn an improperly formatted date-string into null', function() {
@@ -110,8 +111,8 @@ describe('casting types', function(){
 			assert.equal(obj.foo[1].hee, 'hoo');
 			assert.equal(obj.foo[0].when.constructor, Date);
 			assert.equal(obj.foo[1].when.constructor, Date);
-			assert.equal(obj.foo[0].when.getTime(), (new Date('2013-02-28 16:31:13')).getTime());
-			assert.equal(obj.foo[1].when.getTime(), (new Date('2013-02-28')).getTime());
+			assert.equal(obj.foo[0].when.getTime(), (new Date('Thu Feb 28 2013 16:31:13')).getTime());
+			assert.equal(obj.foo[1].when.getTime(), (new Date('Thu Feb 28 2013')).getTime());
 		});
 
 	});

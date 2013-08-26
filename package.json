@@ -31,9 +31,14 @@
       "chrome/25..latest",
       "safari/latest",
       "iphone/6",
-      "ipad/6"
+      "ipad/6",
+      "android/latest",
+      "opera/latest"
     ],
     "harness": "mocha-tdd",
     "files": "test/*.test.js"
+  },
+  "dependencies": {
+    "moment": "~2.1.0"
   }
 }
